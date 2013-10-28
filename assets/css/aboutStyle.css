@@ -1,0 +1,62 @@
+.teamMemberPicture img{
+	width:100%;
+	height: auto; /*automatically adjusting*/
+	margin: 2% 0% 1%; /*w/o margin --> starts from top */
+}
+
+.cropChris{
+	overflow:hidden; /* this is important */
+	height: auto;
+	margin: 1% 0% 1%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit--border-radius: 5px;	
+
+}
+
+.cropChris img{ /*change this margin to "crop" */
+	margin:-10% 0 -80% 0px;
+}
+
+.cropShannon{
+	overflow:hidden; /* this is important */
+	height: auto;
+	margin: 1% 0% 1%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit--border-radius: 5px;	
+
+}
+
+.cropShannon img{ /*change this margin to "crop" */
+	margin:-5% 0 -40% 0px;
+}
+
+.cropSahar{
+	overflow:hidden; /* this is important */
+	height: auto;
+	margin: 1% 0% 1%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit--border-radius: 5px;	
+
+}
+
+.cropSahar img{ /*change this margin to "crop" */
+	margin:-5% 0 -20% 0px;
+}
+
+.cropBryant{
+	overflow:hidden; /* this is important */
+	height: auto;
+	margin: 1% 0% 1%;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit--border-radius: 5px;	
+
+}
+
+.cropBryant img{ /*change this margin to "crop" */
+	margin:-5% 0 -50% 0px;
+}
+	
