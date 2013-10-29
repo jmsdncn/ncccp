@@ -1,0 +1,3 @@
+{% if include.tab == page.tab %}
+  class="active"
+{% endif %}
