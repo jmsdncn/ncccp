@@ -44,6 +44,10 @@ nav > a:first-child {
   font-family: 'Merriweather Sans', sans-serif;
 }
 
+nav > a:first-child:hover {
+  border: 0;
+}
+
 nav > a:first-child span {
   padding-right: 5px;
   margin-right: 5px;
