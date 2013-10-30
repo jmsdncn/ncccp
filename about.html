@@ -1,0 +1,66 @@
+---
+layout: default
+title: About
+intro: We are the <em>NCCCP Team</em>
+extra_css: 
+  - /assets/css/about.css
+
+team:
+  -
+    name: Chris Joe
+    image_dim: 188
+    blurb: During his time at UC Davis, <em>Chris Joe</em> participated in a diverse activities that has helped him become the best pharmacist he could be. From serving as the Pre-Pharmacy Peer Advisor for the entire UC Davis campus to studying pain and itch under Dr. Earl Carstens, he developed a passion for pharmacy. At Pacific, he continues to be involved as Co-Chair for NCCCP, where he is determined to pursue a career in clinical pharmacy and research. Aside from pharmacy, he enjoys running miles for miles.
+  -
+    name: Shannon Shea
+    image_dim: 150
+    blurb: As NCCCP co-chair, <em>Shannon Shea</em> has become increasingly involved in health-systems pharmacy by working inpatient pharmacy at Kaiser Permanente as an Intern Pharmacist. Simultaneously, Shannon has been working in Katrina Venderova's Parkinson's Disease research lab and plans to continue research throughout her career.
+  -
+    name: Sahar Taha
+    image_dim: 404
+    blurb: <em>Sahar Taha</em> is an NCCCP Project Manager. One day this small section will be updated and the world will know more about her. Until then, this little blurb will attempt to do her justice.
+  -
+    name: Bryant Pham
+    image_dim: 200
+    blurb: <em>Bryant Pham</em> is an NCCCP Project Manager. He has spent an extraordinary amount of time designing this website. His involvement in NCCCP has lead him to take an interest in clinical pharmacy. Other than NCCCP activities, during his free time he enjoys practicing martial arts, particularly Sanda and Kung Fu.
+---
+<div class="about group">
+  <div>
+    <h2>Our Philosophy</h2>
+    <p>Our committee is dedicated to increasing knowledge and educating the student body about advancement in the profession of pharmacy through opportunities in residency placement and training and specialized board certifications
+  </div>
+
+  <div>
+    <h2>Our Mission</h2>
+    <p>NCCCP mirrors ACCP’s commitment to excellence in patient care, research, and education, and passion for expanding the frontiers of clinical pharmacy.
+  </div>
+
+  <div>
+    <img src="{{ site.baseurl }}/assets/img/about/accp_logo.jpg" width="500" height="500" alt="ACCP Logo" title="ACCP Logo">
+  </div>
+</div>
+
+<hr>
+
+<h2>Meet the Team</h2>
+<div class="team">
+  {% for member in page.team %}
+    {% assign name = member.name %}
+    {% assign dim = member.image_dim %}
+    <div class="group">
+      <img src="{{ site.baseurl }}/assets/img/about/{{ name | downcase | replace:' ','_' }}.jpg" width="{{ dim }}" height="{{ dim }}" alt="{{ name }}" title="{{ name }}">
+      <p>{{ member.blurb }}
+    </div>
+  {% endfor %}
+</div>
+
+<hr>
+
+<h2>Faculty Advisor</h2>
+<div class="advisor group">
+  <img src="{{ site.baseurl }}/assets/img/about/william_kehoe.jpg" width="250" height="340" alt="Dr. William Kehoe" title="Dr. William Kehoe">
+  <div>
+    <p>Dr. William Kehoe '95 graduated from University of California at Los Angeles (UCLA) with a bachelor of arts in biology, University of California at San Francisco (UCSF) with a Doctor of Pharmacy, and University of the Pacific with a masters in psychology with an emphasis in behavioral medicine. Dr. Kehoe completed a residency in hospital and clinical pharmacy at UCSF. He currently teaches in the areas of neurological and psychiatric pharmacotherapy, behavioral medicine and health psychology.
+
+    <p>Dr. Kehoe is a clinical pharmacist at St. Joseph's Behavioral Health Center and at Green Brothers Pharmacy both in Stockton. He also serves as a consultant in clinical psychopharmacology for the developmentally disabled at Valley Mountain Regional Center, Stockton, CA. Dr. Kehoe is a Board Certified Pharmacotherapy Specialist by the Board of Pharmaceutical Specialties, and is certified in Applied Pharmacology by the American Board of Clinical Pharmacology.
+  </div>
+</div>

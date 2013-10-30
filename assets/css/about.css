@@ -1,0 +1,63 @@
+.about div {
+  float: left;
+  width: 25.33%;
+  padding: 0 4%;
+}
+
+.about img {
+  width: 100%;
+  height: auto;
+}
+
+.team {
+  width: 95%;
+  margin: 0 auto 30px;
+}
+
+.team > div {
+  margin-top: 10px;
+}
+
+.team > div:first-child {
+  margin-top: 0;
+}
+
+.team img {
+  width: 150px;
+  height: 150px;
+  float: left;
+  border-radius: 5px;
+}
+
+.team p {
+  margin: 0;
+  padding: 7px;
+  overflow: hidden;
+}
+
+.team em {
+  font-style: normal;
+  color: #CF5C3F;
+}
+
+.advisor {
+  width: 95%;
+  margin: 0 auto 30px;
+}
+
+.advisor img {
+  border-radius: 5px;
+  display: inline-block;
+  width: 23%;
+  height: auto;
+  float: left;
+}
+
+.advisor div {
+  overflow: hidden;
+  padding: 7px;
+}
+
+.advisor div p:first-child {
+  margin: 0;
+}

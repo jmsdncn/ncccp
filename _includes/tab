@@ -1,0 +1,9 @@
+{% capture _dummy %}
+  {% if include.href == "/" and page.url == "/index.html" %}
+    {% assign is_active = true %}
+  {% elsif include.href == page.url %}
+    {% assign is_active = true %}
+  {% else %}
+    {% assign is_active = false %}
+  {% endif %}
+{% endcapture %}<li><a href="{{ site.baseurl }}{{ include.href }}" {% if is_active %}class="active"{% endif %}>{{ include.text }}</a>

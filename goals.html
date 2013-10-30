@@ -1,0 +1,23 @@
+---
+layout: default
+title: Goals
+intro: We are the <em>NCCCP Team</em>
+extra_css:
+  - /assets/css/goals.css
+
+goals:
+  - Successfully expand our research project with the American Lung Association (ALA) committee and implement the study during the Fall 2012 semester at MediCare Part D events. Collect and analyze data pertaining to asthma/COPD disease state and current disease management. Perform NIOX Inflammation procedure and ACT test on qualified patients Perform Peak Flow and Pulse Oximetry measurements on qualified patients. Provide a service to the community by incorporating results from devices to asthma medication therapy management.
+  - Continue to bring awareness to Pacific about Board of Pharmacy Specialty Certifications by hosting at least one speaker event on specific specialties per semester.
+  - Incorporate our own website to create a collection of past events as well as announce future events held by NCCCP. The website will also provide a stronger connection between the NCCCP organization and student leaders from various schools of pharmacy.
+  - Increase student involvement on Pacific’s campus with NCCCP, through CE and memberships events, as well as online sources.
+  - Recruit and prepare a team to send to the annual ACCP Clinical Pharmacy Challenge
+  - Continue and expand out PharmD Research Day event to include students who are conducting research in the basic sciences department (Physiology, Pharmacology, Pharmacokinetics, etc.).
+  - Continue our patient education booths (Stroke Management and Medication Waste Disposal).
+  - Plan to collaborate with CSHP Pacific Chapter to co-host the Residency Showcase/Student Panel during the Spring 2013 semester.
+---
+{% for goal in page.goals %}
+  <div>
+    <div>{{ forloop.index }}</div>
+    <div>{{ goal }}</div>
+  </div>
+{% endfor %}
