@@ -1,0 +1,27 @@
+div#content > img {
+  width: 100%;
+  height: auto;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+div#content > div.themes {
+  margin: 20px 0;
+}
+
+div#content > div.themes > div {
+  width: 25.33%;
+  float: left;
+  padding: 0 4%;
+}
+
+div#content > div.recent-work > img {
+  width: 24.25%;
+  height: auto;
+  margin-left: 1%;
+  float: left;
+}
+
+div#content > div.recent-work > img:first-child {
+  margin-left: 0;
+}
