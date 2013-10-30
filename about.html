@@ -35,7 +35,7 @@ team:
   </div>
 
   <div>
-    <img src="/assets/img/about/accp_logo.jpg" width="500" height="500" alt="ACCP Logo" title="ACCP Logo">
+    <img src="{{ site.baseurl }}/assets/img/about/accp_logo.jpg" width="500" height="500" alt="ACCP Logo" title="ACCP Logo">
   </div>
 </div>
 
@@ -47,7 +47,7 @@ team:
     {% assign name = member.name %}
     {% assign dim = member.image_dim %}
     <div class="group">
-      <img src="/assets/img/about/{{ name | downcase | replace:' ','_' }}.jpg" width="{{ dim }}" height="{{ dim }}" alt="{{ name }}" title="{{ name }}">
+      <img src="{{ site.baseurl }}/assets/img/about/{{ name | downcase | replace:' ','_' }}.jpg" width="{{ dim }}" height="{{ dim }}" alt="{{ name }}" title="{{ name }}">
       <p>{{ member.blurb }}
     </div>
   {% endfor %}
@@ -57,7 +57,7 @@ team:
 
 <h2>Faculty Advisor</h2>
 <div class="advisor group">
-  <img src="/assets/img/about/william_kehoe.jpg" width="250" height="340" alt="Dr. William Kehoe" title="Dr. William Kehoe">
+  <img src="{{ site.baseurl }}/assets/img/about/william_kehoe.jpg" width="250" height="340" alt="Dr. William Kehoe" title="Dr. William Kehoe">
   <div>
     <p>Dr. William Kehoe '95 graduated from University of California at Los Angeles (UCLA) with a bachelor of arts in biology, University of California at San Francisco (UCSF) with a Doctor of Pharmacy, and University of the Pacific with a masters in psychology with an emphasis in behavioral medicine. Dr. Kehoe completed a residency in hospital and clinical pharmacy at UCSF. He currently teaches in the areas of neurological and psychiatric pharmacotherapy, behavioral medicine and health psychology.
 

@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
   <link href="//fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-  <link href="/assets/css/layouts/default.css" rel="stylesheet">
+  <link href="{{ site.baseurl }}/assets/css/layouts/default.css" rel="stylesheet">
   {% for extra_css in page.extra_css %}
-    <link href="{{ extra_css }}" rel="stylesheet">
+    <link href="{{ site.baseurl }}{{ extra_css }}" rel="stylesheet">
   {% endfor %}
 
   {% if page.url == "/index.html" %}
@@ -20,7 +20,7 @@
 <body>
   <header>
     <div class="top-bar"><strong>NCCCP&nbsp;</strong>| Pacific</div>
-    <img src="/assets/img/layouts/default/logo.jpg" width="188" height="125" alt="NCCCP Logo" title="NCCCP Logo">
+    <img src="{{ site.baseurl }}/assets/img/layouts/default/logo.jpg" width="188" height="125" alt="NCCCP Logo" title="NCCCP Logo">
     <nav>
       <ul class="group">
         {% include tab href="/" text="Home" %}
@@ -42,7 +42,7 @@
   </div>
 
   <footer>
-    Copyright &copy; <a href="/">NCCCP</a>
+    Copyright &copy; <a href="{{ site.baseurl }}/">NCCCP</a>
   </footer>
 </body>
 </html>

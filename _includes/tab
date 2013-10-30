@@ -6,4 +6,4 @@
   {% else %}
     {% assign is_active = false %}
   {% endif %}
-{% endcapture %}<li><a href="{{ include.href }}" {% if is_active %}class="active"{% endif %}>{{ include.text }}</a>
+{% endcapture %}<li><a href="{{ site.baseurl }}{{ include.href }}" {% if is_active %}class="active"{% endif %}>{{ include.text }}</a>
