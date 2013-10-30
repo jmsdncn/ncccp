@@ -1,6 +1,6 @@
 body {
   width: 75%;
-  margin: 50px auto 0;
+  margin: 15px auto 0;
   font-size: 0.875em;
   font-family: Arial, sans-serif;
   line-height: 1.5;
@@ -10,6 +10,10 @@ a {
   color: #CF5C3F;
   text-decoration: none;
   cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px solid #CF5C3F;
 }
 
 h2 {
@@ -27,66 +31,52 @@ header {
   width: 100%;
 }
 
-header > div.top-bar {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: 50px;
-  margin: 0;
-  padding: 0 0 0 2%;
-  color: #FFF;
-  font-size: 20px;
-  font-family: 'Merriweather Sans', sans-serif;
-  line-height: 50px;
-  background-color: #2A4580;
+nav {
+  width: 100%;
 }
 
-header > div.top-bar strong {
+nav > a:first-child {
+  float: left;
+  display: block;
+  height: 45px;
+  color: #2A4580;
+  font-size: 20px;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+nav > a:first-child span {
+  padding-right: 5px;
+  margin-right: 5px;
+  border-right: 2px solid #2A4580;
   font-size: 30px;
 }
 
-header > img {
-  width: 15%;
-  height: auto;
-  margin: 2% 0 1%;
-}
-
-header > nav {
-  margin-top: 65px;
+nav ul {
   float: right;
-}
-
-header > nav ul {
-  list-style: none;
   margin: 0;
+  list-style: none;
 }
 
-header > nav li {
+nav li {
   float: left;
+  height: 45px;
+  padding: 5px 25px 0;
   margin-left: 3px;
+  line-height: 40px;
+  border-radius: 5px;
 }
 
-header > nav li:first-child {
+nav li:first-child {
   margin-left: 0;
 }
 
-header > nav li > a {
-  display: inline-block;
-  padding: 10px 25px;
-  border-radius: 5px;
-  color: #2C3539;
+nav li a {
+  color: #000;
 }
 
-header > nav li > a:hover,
-header > nav li > a.active {
-  color: #FFF;
-  background-color: #CF5C3F;
-}
-
-header > nav + hr {
-  margin-top: 0;
-  clear: both;
+nav li a:hover,
+nav li a.active {
+  color: #CF5C3F;
 }
 
 #intro p {

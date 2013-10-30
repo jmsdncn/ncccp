@@ -18,11 +18,10 @@
 </head>
 
 <body>
-  <header class="group">
-    <div class="top-bar"><strong>NCCCP&nbsp;</strong>| Pacific</div>
-    <img src="{{ site.baseurl }}/assets/img/layouts/default/logo.jpg" width="188" height="125" alt="NCCCP Logo" title="NCCCP Logo">
-    <nav>
-      <ul class="group">
+  <header>
+    <nav class="group">
+      <a id="foo" href="/"><span>NCCCP</span>Pacific</a>
+      <ul>
         {% include tab href="/" text="Home" %}
         {% include tab href="/goals.html" text="Goals" %}
         {% include tab href="/about.html" text="About" %}
@@ -30,7 +29,6 @@
         {% include tab href="/contact.html" text="Contact" %}
       </ul>
     </nav>
-    <hr>
     <div id="intro">
       <p>{{ page.intro }}
     </div>
@@ -42,7 +40,7 @@
   </div>
 
   <footer>
-    Copyright &copy; <a href="{{ site.baseurl }}/">NCCCP</a>
+    Copyright &copy; 2013 <a href="{{ site.baseurl }}/">NCCCP</a>
   </footer>
 </body>
 </html>
